@@ -24,7 +24,6 @@ public class GroundPound : BaseState
     public override void UpdateLogic()
     {
         base.UpdateLogic();
-        GroundPoundActivate();
 
         if (Input.GetKeyUp(KeyCode.Mouse2))
         {
@@ -37,6 +36,7 @@ public class GroundPound : BaseState
     public override void UpdatePhysics()
     {
         base.UpdatePhysics();
+        GroundPoundActivate();
     }
 
     

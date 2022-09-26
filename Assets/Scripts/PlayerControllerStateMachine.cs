@@ -29,8 +29,6 @@ public class PlayerControllerStateMachine : StateMachine
     private void Awake()
     {
         idleState = new Idle(this);
-        //idleState = new Idle(this, () => {
-        //});
         movingState = new Moving(this);
         grappleState = new Grappling(this);
         dashingState = new Dashing(this);

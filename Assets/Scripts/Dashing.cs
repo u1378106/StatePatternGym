@@ -23,8 +23,7 @@ public class Dashing : BaseState
 
     public override void UpdateLogic()
     {
-        base.UpdateLogic();
-        Dash();
+        base.UpdateLogic();    
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
@@ -37,6 +36,7 @@ public class Dashing : BaseState
     public override void UpdatePhysics()
     {
         base.UpdatePhysics();
+        Dash();
     }
 
     
